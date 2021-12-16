@@ -18,14 +18,14 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.travelappui.Models.Travels
+import com.example.travelappui.Models.Travel
 import com.example.travelappui.R
 
 
 @Composable
 fun YouMayLike(
     modifier: Modifier = Modifier,
-    destinications: List<Travels>
+    destinications: List<Travel>
 ) {
     Row(
         modifier = modifier
@@ -46,7 +46,7 @@ fun YouMayLike(
 @Composable
 fun CardImage(
     modifier: Modifier = Modifier,
-    travels: Travels
+    travels: Travel
 ) {
     Card(
         modifier = modifier
@@ -101,6 +101,13 @@ fun CardImage(
 fun YouMayLikePreview() {
     YouMayLike(
         modifier = Modifier,
-        destinications = listOf()
+        destinications = listOf(
+            Travel(
+                image = R.drawable.nakkastepe,
+                name = "Nakkaş Tepe",
+                country = "Turkey",
+                city = "İstanbul"
+            )
+        )
     )
 }

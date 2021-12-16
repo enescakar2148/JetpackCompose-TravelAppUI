@@ -1,6 +1,6 @@
 package com.example.travelappui.Models
 
-data class Travels(
+data class Travel(
     val image: Int,
     val name: String,
     val country: String,
