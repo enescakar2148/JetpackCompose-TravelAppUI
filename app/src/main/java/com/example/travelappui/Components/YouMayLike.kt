@@ -106,7 +106,8 @@ fun YouMayLikePreview() {
                 image = R.drawable.nakkastepe,
                 name = "Nakkaş Tepe",
                 country = "Turkey",
-                city = "İstanbul"
+                city = "İstanbul",
+                about = null
             )
         )
     )

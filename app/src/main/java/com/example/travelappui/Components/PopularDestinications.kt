@@ -50,7 +50,9 @@ fun ImageCard(
         modifier = modifier
             .padding(end = 10.dp, top = 10.dp)
             .clickable {
-                       navController.navigate("travel_details_page")
+                       navController.navigate(
+                           "travel_details_page/${destinication.name}/${destinication.image}/${destinication.about}/${destinication.country}"
+                       )
             },
         shape = RoundedCornerShape(10.dp),
         elevation = 5.dp
