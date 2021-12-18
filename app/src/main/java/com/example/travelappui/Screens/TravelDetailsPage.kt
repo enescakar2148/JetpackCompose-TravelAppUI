@@ -38,7 +38,7 @@ fun TravelDetailsPage(travel: Travel) {
         Texts(
             name = travel.name,
             country = travel.country,
-            about = travel.country,
+            about = travel.about!!,
             customPadding = 10.dp,
             Modifier,
         )
@@ -176,6 +176,29 @@ fun Texts(
                 )
             }
 
+        }
+
+        //About section
+        Column(
+            modifier = modifier
+                .fillMaxWidth()
+                .padding(top = 10.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Text(
+                text = "About",
+                fontWeight = FontWeight.Bold,
+                fontSize = 20.sp
+            )
+
+            Text(
+                text = about,
+                fontWeight = FontWeight.Light,
+                color = Color.Gray,
+                letterSpacing = 1.sp,
+                modifier = modifier
+                    .padding(top = 5.dp)
+            )
         }
 
     }
